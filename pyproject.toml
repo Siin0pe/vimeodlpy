@@ -1,19 +1,42 @@
 [project]
-name = "vimeodl"
+name = "vimeodlpy"
 version = "0.1.0"
-description = ""
+description = "A lightweight Python library and CLI to download Vimeo videos using FFmpeg."
 authors = [
-    {name = "Armand",email = "84010455+Siin0pe@users.noreply.github.com"}
+    { name = "Siin0pe", email = "84010455+Siin0pe@users.noreply.github.com" }
 ]
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+keywords = ["vimeo", "downloader", "ffmpeg", "cli", "video", "stream"]
+
 dependencies = [
+    "beautifulsoup4>=4.12.0,<5.0.0",
+    "cloudscraper>=1.2.71,<2.0.0",
+    "typer>=0.16.0,<0.17.0",
+    "ffmpeg-python>=0.2.0,<0.3.0",
+    "tqdm>=4.67.1,<5.0.0"
 ]
 
-[tool.poetry]
-packages = [{include = "vimeodl", from = "src"}]
+[project.scripts]
+vimeodlpy = "vimeodlpy.cli:app"
 
+[tool.poetry]
+name = "vimeodlpy"
+version = "0.1.0"
+description = "A lightweight Python library and CLI to download Vimeo videos using FFmpeg."
+authors = ["Siin0pe <84010455+Siin0pe@users.noreply.github.com>"]
+readme = "README.md"
+packages = [
+    { include = "vimeodlpy", from = "src" }
+]
+
+[tool.poetry.urls]
+Homepage = "https://github.com/Siin0pe/vimeodlpy"
+"Issue Tracker" = "https://github.com/Siin0pe/vimeodlpy/issues"
+Repository = "https://github.com/Siin0pe/vimeodlpy"
+Documentation = "https://github.com/Siin0pe/vimeodlpy#readme"
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core>=1.7.0"]
 build-backend = "poetry.core.masonry.api"
