@@ -5,7 +5,10 @@
 ![PyPI](https://img.shields.io/pypi/v/vimeodlpy)
 ![Python](https://img.shields.io/badge/python-3.11+-blue)
 ![License](https://img.shields.io/github/license/Siin0pe/vimeodlpy)
-
+![Downloads](https://static.pepy.tech/badge/vimeodlpy)
+![Last Commit](https://img.shields.io/github/last-commit/Siin0pe/vimeodlpy)
+![Issues](https://img.shields.io/github/issues/Siin0pe/vimeodlpy)
+![GitHub stars](https://img.shields.io/github/stars/Siin0pe/vimeodl)(<https://github.com/Siin0pe/vimeodl/stargazers>)
 ---
 
 ## Overview
